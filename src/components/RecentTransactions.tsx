@@ -11,6 +11,7 @@ export function RecentTransactions() {
 
   return (
     <section className="px-4 pb-24">
+      
       <div className="flex items-center justify-between mb-4">
         <h2 className="font-display font-semibold text-lg text-foreground">Recent Transactions</h2>
         <button
