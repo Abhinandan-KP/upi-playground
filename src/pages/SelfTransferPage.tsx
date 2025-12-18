@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils';
 const SelfTransferPage = () => {
   const navigate = useNavigate();
   const { user, updateBalance, verifyPin } = useUPI();
+  
 
   const [fromAccount, setFromAccount] = useState<BankAccount | null>(
     user.linkedAccounts.find((acc) => acc.isPrimary) || null
