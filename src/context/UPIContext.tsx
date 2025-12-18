@@ -7,6 +7,7 @@ interface UPIContextType {
   contacts: Contact[];
   addTransaction: (transaction: Omit<Transaction, 'id'>) => void;
   updateBalance: (accountId: string, newBalance: number) => void;
+  
   verifyPin: (pin: string) => boolean;
   getAccountBalance: (accountId: string) => number;
   getPrimaryAccount: () => BankAccount | undefined;
