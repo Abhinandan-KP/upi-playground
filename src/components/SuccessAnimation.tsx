@@ -10,6 +10,7 @@ interface SuccessAnimationProps {
 }
 
 export function SuccessAnimation({
+  
   isOpen,
   onClose,
   amount,
