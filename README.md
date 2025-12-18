@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+UPI Playground
+A specialized developer tool designed to simulate, generate, and test Unified Payments Interface (UPI) deep-linking and QR code flows. This playground allows developers to visualize how payment requests behave across different mobile handles and merchant parameters.
 
-## Project info
+🚀 Overview
+The UPI Playground provides an interactive environment to construct UPI URI strings according to the NPCI specifications. It helps in debugging payment strings, testing merchant VPA (Virtual Payment Address) integration, and ensuring that mobile intent triggers work correctly across various UPI-enabled apps.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🛠 Tech Stack
+I built this project using a modern, type-safe stack for maximum performance and a polished UI:
 
-## How can I edit this code?
+Framework: React with Vite for an ultra-fast dev experience.
 
-There are several ways of editing your application.
+Language: TypeScript to ensure robust handling of payment parameters.
 
-**Use Lovable**
+Styling: Tailwind CSS for a sleek, responsive, and mobile-first design.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+UI Components: shadcn/ui for accessible, professional-grade components.
 
-Changes made via Lovable will be committed automatically to this repo.
+Utilities: QR Code Styling for real-time, customizable QR generation.
 
-**Use your preferred IDE**
+✨ Features
+Dynamic URI Generation: Generate upi://pay?... strings in real-time as you type.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Interactive QR Previews: Instant QR code generation with support for custom branding/logos.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Parameter Validation: Built-in checks for mandatory fields like pa (Payee Address) and pn (Payee Name).
 
-Follow these steps:
+Intent Testing: Copy or share generated links to test mobile app triggering on iOS and Android.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Amount Formatting: Automatic validation for transaction limits and decimal precision.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+💻 Local Development
+To run the playground locally and experiment with the source code:
 
-# Step 3: Install the necessary dependencies.
-npm i
+Clone the project
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Bash
+
+git clone https://github.com/your-username/upi-playground.git
+Install dependencies
+
+Bash
+
+npm install
+Launch the development server
+
+Bash
+
 npm run dev
-```
+📖 How to Use
+Input Details: Enter the Payee VPA, Merchant Name, and Transaction Note.
 
-**Edit a file directly in GitHub**
+Set Amount: Specify the transaction value (optional for open-ended QR codes).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Customize: Adjust the QR code style or add a custom merchant logo.
 
-**Use GitHub Codespaces**
+Test: Use a UPI-enabled app (PhonePe, Google Pay, Paytm) to scan the generated QR or click the intent link on a mobile device.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Note: This is a frontend simulation tool.
