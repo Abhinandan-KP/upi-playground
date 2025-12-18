@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UPIProvider } from "@/context/UPIContext";
 import Index from "./pages/Index";
+
 import ScanPage from "./pages/ScanPage";
 import PayContactsPage from "./pages/PayContactsPage";
 import SelfTransferPage from "./pages/SelfTransferPage";
