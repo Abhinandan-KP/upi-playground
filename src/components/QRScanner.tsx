@@ -15,6 +15,7 @@ export function QRScanner({ isOpen, onClose, onScan }: QRScannerProps) {
   const handleSubmit = () => {
     if (!upiId.trim()) {
       setError('Please enter a UPI ID');
+      
       return;
     }
     if (!upiId.includes('@')) {
