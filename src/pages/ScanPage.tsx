@@ -17,6 +17,7 @@ const ScanPage = () => {
   const [showPinEntry, setShowPinEntry] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [scannedUPI, setScannedUPI] = useState('');
+  
   const [paymentAmount, setPaymentAmount] = useState(0);
   const [paymentNote, setPaymentNote] = useState('');
   const [transactionId, setTransactionId] = useState('');
