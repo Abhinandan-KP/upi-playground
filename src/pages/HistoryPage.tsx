@@ -8,6 +8,7 @@ import { TransactionFilter } from '@/types/upi';
 import { cn } from '@/lib/utils';
 
 const filters: { label: string; value: TransactionFilter }[] = [
+  
   { label: 'All', value: 'all' },
   { label: 'Sent', value: 'sent' },
   { label: 'Received', value: 'received' },
