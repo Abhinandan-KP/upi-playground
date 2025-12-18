@@ -12,6 +12,7 @@ const actions = [
     icon: Users,
     label: 'Pay Contacts',
     color: 'from-accent to-success',
+    
     path: '/pay',
   },
   {
