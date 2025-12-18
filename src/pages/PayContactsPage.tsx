@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils';
 
 const PayContactsPage = () => {
   const navigate = useNavigate();
+  
   const { user, contacts, addTransaction, updateBalance, verifyPin, getPrimaryAccount } = useUPI();
 
   const [searchQuery, setSearchQuery] = useState('');
