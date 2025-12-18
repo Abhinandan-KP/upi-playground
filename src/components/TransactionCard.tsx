@@ -10,6 +10,7 @@ export function TransactionCard({ transaction }: TransactionCardProps) {
   const isSent = transaction.type === 'sent';
   const displayName = isSent ? transaction.receiverName : transaction.senderName;
   const displayUPI = isSent ? transaction.receiverUPI : transaction.senderUPI;
+  
 
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('en-IN', {
