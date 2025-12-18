@@ -6,6 +6,7 @@ import { useUPI } from '@/context/UPIContext';
 
 const Index = () => {
   const { user, getPrimaryAccount } = useUPI();
+  
   const primaryAccount = getPrimaryAccount();
 
   const formatBalance = (amount: number) => {
