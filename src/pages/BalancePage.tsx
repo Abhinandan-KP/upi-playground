@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 const BalancePage = () => {
   const navigate = useNavigate();
   const { user, verifyPin } = useUPI();
+  
 
   const [visibleBalances, setVisibleBalances] = useState<Record<string, boolean>>({});
   const [showPinEntry, setShowPinEntry] = useState(false);
