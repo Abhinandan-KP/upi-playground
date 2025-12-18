@@ -8,6 +8,7 @@ interface PaymentModalProps {
   receiverUPI: string;
   receiverName: string;
   onPay: (amount: number, note: string) => void;
+  
 }
 
 export function PaymentModal({
