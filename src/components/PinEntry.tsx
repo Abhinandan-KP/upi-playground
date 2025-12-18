@@ -6,6 +6,7 @@ interface PinEntryProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (pin: string) => void;
+  
   amount?: number;
   receiverName?: string;
 }
