@@ -5,6 +5,7 @@ export function Header() {
   const { user } = useUPI();
 
   return (
+    
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="max-w-md mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-3">
