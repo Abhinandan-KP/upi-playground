@@ -33,10 +33,7 @@ To run the playground locally and experiment with the source code:
 
 Clone the project
 
-Bash
 
-git clone https://github.com/your-username/upi-playground.git
-Install dependencies
 
 Bash
 
